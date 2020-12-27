@@ -164,10 +164,12 @@ par(mfrow=c(2,1))
 plot(x=weekendmeansteps$interval, y=weekendmeansteps$steps,
         type="l",
         xlab = "5-minute Interval Over the Day (Weekend)",
-        ylab = "Weekend Average Number of Steps")
+        ylab = "Weekend Average Number of Steps",
+        ylim=c(0,225))
 
 plot(x=weekdaymeansteps$interval, y=weekdaymeansteps$steps,
         type="l",
         xlab = "5-minute Interval Over the Day (Weekday)",
-        ylab = "Weekday Average Number of Steps")
+        ylab = "Weekday Average Number of Steps",
+        ylim=c(0,225))
 
